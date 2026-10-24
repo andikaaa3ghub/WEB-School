@@ -16,7 +16,7 @@
     ?>
 
     <div class="hero-overlay">
-        <h1>Selamat Datang di Sekolah XYZ</h1>
+        <h1>Selamat Datang di SMK Negeri 1 Kota Prabumulih</h1>
         <p>Mencetak Generasi Cerdas, Kreatif, dan Berakhlak Mulia.</p>
         <a href="ppdb.php" class="btn">Pendaftaran PPDB</a>
     </div>

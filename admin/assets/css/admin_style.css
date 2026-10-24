@@ -134,3 +134,24 @@ th, td {
 th {
     background-color: #f2f2f5;
 }
+
+/* Tombol aksi standar admin */
+.btn {
+    display: inline-block;
+    padding: 6px 14px;
+    border-radius: 4px;
+    font-size: 13px;
+    font-weight: 500;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    border: none;
+    transition: opacity 0.2s ease, transform 0.1s ease;
+}
+.btn:hover {
+    opacity: 0.9;
+    transform: translateY(-1px);
+}
+.btn + .btn {
+    margin-left: 6px;
+}

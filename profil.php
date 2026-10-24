@@ -59,17 +59,17 @@
                             // Tampilkan konten sesuai jenis halaman
                             if ($sub_page == 'sejarah') {
                                 echo "<h2>" . htmlspecialchars($data['judul'] ?? 'Judul Belum Diatur') . "</h2>";
-                                echo "<div class='konten-apa-adanya'>" . htmlspecialchars($data['deskripsi'] ?? '') . "</div>";
+                                echo "<div class='konten-apa-adanya'>" . nl2br(htmlspecialchars($data['deskripsi'] ?? '')) . "</div>";
                             } 
                             elseif ($sub_page == 'visi-misi') {
                                 echo "<h3>" . htmlspecialchars($data['judul_visi'] ?? 'Visi Belum Diatur') . "</h3>";
-                                echo "<div class='konten-apa-adanya'>" . htmlspecialchars($data['isi_visi'] ?? '') . "</div>";
-                                echo "<h3 style='margin-top:20px;'>" . htmlspecialchars($data['judul_misi'] ?? 'Misi Belum Diatur') . "</h3>";
-                                echo "<div class='konten-apa-adanya'>" . htmlspecialchars($data['isi_misi'] ?? '') . "</div>";
+                                echo "<div class='konten-apa-adanya'>" . nl2br(htmlspecialchars($data['isi_visi'] ?? '')) . "</div>";
+                                echo "<h3 style='margin-top:25px;'>" . htmlspecialchars($data['judul_misi'] ?? 'Misi Belum Diatur') . "</h3>";
+                                echo "<div class='konten-apa-adanya'>" . nl2br(htmlspecialchars($data['isi_misi'] ?? '')) . "</div>";
                             } 
                             elseif ($sub_page == 'struktur') {
                                 echo "<h2>" . htmlspecialchars($data['judul'] ?? 'Judul Belum Diatur') . "</h2>";
-                                echo "<div class='konten-apa-adanya'>" . htmlspecialchars($data['deskripsi'] ?? '') . "</div><br>";
+                                echo "<div class='konten-apa-adanya'>" . nl2br(htmlspecialchars($data['deskripsi'] ?? '')) . "</div><br>";
                                 $gambar = $data['gambar'] ?? 'default_chart.png';
                                 $image_path = 'assets/images/profil/' . htmlspecialchars($gambar);
                                 if (file_exists($image_path)) {
@@ -78,7 +78,7 @@
                             } 
                             elseif ($sub_page == 'sarana') {
                                 echo "<h2>" . htmlspecialchars($data['judul'] ?? 'Judul Belum Diatur') . "</h2>";
-                                echo "<ul>";
+                                echo "<ul class='sarana-list'>";
                                 $daftar_sarana = $data['daftar_sarana'] ?? '';
                                 $items = explode("\n", trim($daftar_sarana));
                                 foreach ($items as $item) {

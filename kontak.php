@@ -28,12 +28,10 @@ include 'includes/header.php';
             <div class="contact-info">
                 <h4>Informasi Kontak</h4>
                 <p>Jangan ragu untuk menghubungi kami melalui detail di bawah ini atau melalui formulir di samping.</p>
-                <p><strong>Alamat:</strong> Jl. Pendidikan No. 123, Kota Ilmu, Indonesia.</p>
-                <p><strong>Telepon:</strong> (021) 123-4567</p>
-                <p><strong>Email:</strong> info@sekolahxyz.sch.id</p>
-                <iframe src="http://googleusercontent.com/maps.google.com/6"
-                    width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
+                <p><strong>Alamat:</strong> Jl. M. Yusuf Wahid No. 1, Prabumulih.</p>
+                <p><strong>Telepon:</strong> 082185280514</p>
+                <p><strong>Email:</strong> smkn1.prabumulih@gmail.com</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3982.8142879971024!2d104.24500647497224!3d-3.3954605965791322!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e3a337c4c0ad839%3A0x5cbff942feb915fd!2sSMK%20Negeri%201%20Prabumulih!5e0!3m2!1sid!2sid!4v1789682529979!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
             </div>
 
             <div class="form-wrapper" style="padding:30px;">

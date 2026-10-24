@@ -189,16 +189,16 @@ header nav a.active {
     text-decoration: none;
     font-weight: 500;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0 4px 15px rgba(0, 123, 255, 0.3);
+    box-shadow: 0 4px 15px rgba(2, 2, 2, 0.3);
 }
 
 .btn:hover {
     transform: translateY(-3px);
-    box-shadow: 0 6px 20px rgba(0, 123, 255, 0.4);
+    box-shadow: 0 6px 20px rgba(248, 0, 0, 0.4);
 }
 
 .btn.btn-secondary {
-    background: #6c757d;
+    background: #ff0101;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
@@ -273,7 +273,7 @@ footer {
 }
 /* --- Halaman Header (untuk semua halaman internal) --- */
 .page-header {
-    padding: 60px 20px;
+    padding: 5px 20px;
     background: var(--text-dark);
     color: white;
     text-align: center;
@@ -330,6 +330,34 @@ footer {
     padding: 40px;
     border-radius: 10px;
     box-shadow: var(--shadow);
+}
+
+/* Style agar teks paragraf, spasi, dan baris baru diatur rapi ke bawah */
+.konten-apa-adanya {
+    word-break: break-word;
+    overflow-wrap: break-word;
+    line-height: 1.6;
+    font-size: 15.5px;
+    color: #4a5568;
+    margin-top: 12px;
+}
+
+.konten-apa-adanya p {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.sarana-list {
+    line-height: 1.6;
+    font-size: 15.5px;
+    color: #4a5568;
+    padding-left: 20px;
+    margin-top: 12px;
+}
+
+.sarana-list li {
+    margin-bottom: 6px;
+    line-height: 1.5;
 }
 
 .profile-content h2 {
@@ -426,12 +454,35 @@ footer {
     border-color: var(--blue-dark);
     box-shadow: 0 0 0 3px rgba(13, 110, 253, 0.15);
 }
+
+.form-group textarea {
+    min-height: 160px;
+    resize: vertical;
+    line-height: 1.6;
+}
+
 /* --- Halaman Kontak --- */
 .contact-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: 1fr 1.3fr;
     gap: 40px;
     align-items: flex-start;
+}
+
+@media (max-width: 768px) {
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.contact-grid .form-wrapper {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 35px 40px;
+}
+
+.contact-grid .form-group textarea {
+    min-height: 200px;
 }
 .contact-info h4, .contact-form-wrapper h4 {
     font-size: 22px;
