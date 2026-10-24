@@ -1,2 +1,2 @@
-Username: and
+Username: admin
 Password: admin
